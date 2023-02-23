@@ -25,7 +25,7 @@
 
     <coverage>
         <include>
-            <directory suffix=".php">src</directory>
+            <directory suffix=".php">hello_world</directory>
         </include>
     </coverage>
 </phpunit>
