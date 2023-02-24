@@ -19,6 +19,7 @@
 
 namespace application;
 
+use controllers\HelloWorldController;
 use controllers\HomeController;
 use yasmf\ComponentFactory;
 use yasmf\NoControllerAvailableForName;
@@ -38,6 +39,7 @@ class DefaultComponentFactory implements ComponentFactory
     public function buildControllerByName(string $controller_name): mixed {
         return match ($controller_name) {
             "Home" => $this->buildHomeController(),
+            "HelloWorld" => $this->buildHelloWorldController(),
             default => throw new NoControllerAvailableForName($controller_name)
         };
     }
@@ -58,5 +60,13 @@ class DefaultComponentFactory implements ComponentFactory
     private function buildHomeController(): HomeController
     {
         return new HomeController();
+    }
+
+    /**
+     * @return HelloWorldController
+     */
+    private function buildHelloWorldController(): HelloWorldController
+    {
+        return new HelloWorldController();
     }
 }

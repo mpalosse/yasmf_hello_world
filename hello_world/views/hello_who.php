@@ -24,7 +24,7 @@
 </head>
 <body>
 <?php
-require $_SERVER[ 'DOCUMENT_ROOT' ] . PREFIX_TO_RELATIVE_PATH . '/lib/vendor/autoload.php';
+require $_SERVER[ 'DOCUMENT_ROOT' ] . HELLO_WORLD_PREFIX . '/lib/vendor/autoload.php';
 
 ?>
 <h1>Hello</h1>

@@ -20,8 +20,8 @@
 /*
  * Sample without database connexion
  */
-const PREFIX_TO_RELATIVE_PATH = "/hello_world";
-require $_SERVER[ 'DOCUMENT_ROOT' ] . PREFIX_TO_RELATIVE_PATH . '/lib/vendor/autoload.php';
+const HELLO_WORLD_PREFIX = "/hello_world";
+require $_SERVER[ 'DOCUMENT_ROOT' ] . HELLO_WORLD_PREFIX . '/lib/vendor/autoload.php';
 
 
 use application\DefaultComponentFactory;
