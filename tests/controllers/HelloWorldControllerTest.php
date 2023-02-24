@@ -17,15 +17,30 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-/*
- * Sample without database connexion
- */
-const PREFIX_TO_RELATIVE_PATH = "/hello_world";
-require $_SERVER[ 'DOCUMENT_ROOT' ] . PREFIX_TO_RELATIVE_PATH . '/lib/vendor/autoload.php';
+namespace controllers;
 
+use PHPUnit\Framework\TestCase;
+use function PHPUnit\Framework\assertEquals;
 
-use application\DefaultComponentFactory;
-use yasmf\Router;
+class HelloWorldControllerTest extends TestCase
+{
 
-$router = new Router(new DefaultComponentFactory()) ;
-$router->route('hello_world');
+    private HelloWorldController $helloWorldController;
+
+    public function setUp(): void
+    {
+        parent::setUp();
+        // given a hello world  controller
+        $this->helloWorldController = new HelloWorldController();
+    }
+
+    public function testIndex()
+    {
+        // when call to index
+        $view = $this->helloWorldController->sayHello();
+        // then the view point to the expected view file
+        self::assertEquals("views/hello_you", $view->getRelativePath());
+        // and the name is set
+        assertEquals("no name", $view->getVar('name'));
+    }
+}

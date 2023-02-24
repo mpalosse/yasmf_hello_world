@@ -2,4 +2,5 @@ parameters:
 	level: max
 	paths:
 		- hello_world
-		- tests
+	excludePaths:
+	    - hello_world/lib
