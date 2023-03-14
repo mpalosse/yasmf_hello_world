@@ -1,6 +1,6 @@
 # Steps
 
-1. Install Php version 8 or superior (8.0.28 works Larogon with Laragon). see https://windows.php.net/download/ and download the thread safe version.
+1. Install Php version 8.1 or superior (8.1.16 works with Laragon). see https://windows.php.net/download/ and download the thread safe version.
 2. Activate openssl and curl extension in the `php.ini`file.
 3. Set the `PATH` variable to point to the folder of fresh installed version of Php.
 `%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\php-R4.02\php-8.0.28;`
