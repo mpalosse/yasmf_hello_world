@@ -22,6 +22,8 @@ Install in local folder: `D:\php-R4.02\php-8.1.16`.
 
 7. Launch `composer update` from the `composer.json`.
 
+8. Install xdebug following instructions here: https://xdebug.org/wizard 
+
 ### To launch PHPStan
 
 `php ./hello_world/lib/vendor/bin/phpstan --xdebug analyse -c ./phpstan.neon`
