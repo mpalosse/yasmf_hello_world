@@ -34,4 +34,4 @@ Install in local folder: `D:\php-R4.02\php-8.1.16`.
 
 ### To launch tests with coverage
 
-`php -dxdebug.mode=coverage ./hello_world/lib/vendor/bin/phpunit  --coverage-html='reports/coverage'`
+`php -d xdebug.mode=coverage ./hello_world/lib/vendor/bin/phpunit  --coverage-html='reports/coverage'`
