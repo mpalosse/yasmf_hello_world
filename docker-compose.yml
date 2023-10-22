@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: yasmf_hello_world
+    container_name: yasmf_hello_world_app
+    working_dir: /var/www/html/
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www/html/
+  
