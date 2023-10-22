@@ -22,7 +22,7 @@ namespace application;
 use controllers\HelloWorldController;
 use controllers\HomeController;
 use PHPUnit\Framework\TestCase;
-use yasmf\NoControllerAvailableForName;
+use yasmf\NoControllerAvailableForNameException;
 
 class DefaultComponentFactoryTest extends TestCase
 {
@@ -52,7 +52,7 @@ class DefaultComponentFactoryTest extends TestCase
         // given a component factory
         $componentFactory = new DefaultComponentFactory();
         // expected exception when ask for a non-existant controller
-        $this->expectException(NoControllerAvailableForName::class);
+        $this->expectException(NoControllerAvailableForNameException::class);
         $componentFactory->buildControllerByName("NoController");
     }
 }
