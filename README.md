@@ -6,7 +6,7 @@ A very simple project without database connection.
 
 ```
 $ docker-compose up -d 
-$ docker-compose exec app composer update
+$ docker-compose exec hello_world composer update
 ```
 
 Open your favorite browser and use this URL to test the web app:
@@ -18,7 +18,7 @@ Open your favorite browser and use this URL to test the web app:
 
 First, you have to open a terminal to access the container after it's launched.
 
-`$ docker-compose exec app bash`
+`$ docker-compose exec hello_world bash`
 
 
 - PHPStan 
