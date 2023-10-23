@@ -28,4 +28,4 @@ use application\DefaultComponentFactory;
 use yasmf\Router;
 
 $router = new Router(new DefaultComponentFactory()) ;
-$router->route('hello_world');
+$router->route(HELLO_WORLD_PREFIX);
