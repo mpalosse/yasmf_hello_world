@@ -34,7 +34,5 @@ require $_SERVER[ 'DOCUMENT_ROOT' ] . HELLO_WORLD_PREFIX . '/lib/vendor/autoload
     Your name? <input name="name" type="text" placeholder="your name here">
     <input type="submit" value="OK">
 </form>
-
-
 </body>
 </html>
