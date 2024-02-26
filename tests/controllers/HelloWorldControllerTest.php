@@ -41,6 +41,6 @@ class HelloWorldControllerTest extends TestCase
         // then the view point to the expected view file
         self::assertEquals("views/hello_you", $view->getRelativePath());
         // and the name is set
-        assertEquals("no name", $view->getVar('name'));
+        self::assertEquals("no name", $view->getVar('name'));
     }
 }
