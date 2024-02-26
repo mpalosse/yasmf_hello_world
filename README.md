@@ -5,20 +5,25 @@ A very simple project without database connection.
 ### To launch the application
 
 ```
-$ docker-compose up -d 
-$ docker-compose exec hello_world composer update
+$ docker compose up -d 
+$ docker compose exec hello_world composer update
 ```
 
 Open your favorite browser and use this URL to test the web app:
 
 `http://localhost:8080/hello_world/`
 
+### To stop and destroy containers
+
+```
+$ docker compose down
+```
 
 ### To launch some actions
 
 First, you have to open a terminal to access the container after it's launched.
 
-`$ docker-compose exec hello_world bash`
+`$ docker compose exec hello_world bash`
 
 
 - PHPStan 
