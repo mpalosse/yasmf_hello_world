@@ -13,6 +13,12 @@ Open your favorite browser and use this URL to test the web app:
 
 `http://localhost:8080/hello_world/`
 
+### To access application logs :
+
+```
+$ docker logs yasmf_hello_world_app --follow
+```
+
 ### To stop and destroy containers
 
 ```
