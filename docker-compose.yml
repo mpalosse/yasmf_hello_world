@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   hello_world:
     image: webdevops/php-apache-dev:8.2-alpine
