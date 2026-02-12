@@ -20,7 +20,9 @@
 namespace controllers;
 
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(HomeController::class)]
 class HomeControllerTest extends TestCase
 {
 

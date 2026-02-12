@@ -21,7 +21,9 @@ namespace controllers;
 
 use PHPUnit\Framework\TestCase;
 use function PHPUnit\Framework\assertEquals;
+use PHPUnit\Framework\Attributes\CoversClass;
 
+#[CoversClass(HelloWorldController::class)]
 class HelloWorldControllerTest extends TestCase
 {
 

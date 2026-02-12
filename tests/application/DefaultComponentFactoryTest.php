@@ -21,9 +21,14 @@ namespace application;
 
 use controllers\HelloWorldController;
 use controllers\HomeController;
-use PHPUnit\Framework\TestCase;
 use yasmf\NoControllerAvailableForNameException;
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\UsesClass;
 
+#[CoversClass(DefaultComponentFactory::class)]
+#[UsesClass(HelloWorldController::class)]
+#[UsesClass(HomeController::class)]
 class DefaultComponentFactoryTest extends TestCase
 {
 
