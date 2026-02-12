@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1bbeb20a72b78f9d45d1acddce919c1",
+    "content-hash": "2dd5cca15b6cf778cc27a2bceb301050",
     "packages": [
         {
             "name": "myclabs/deep-copy",
@@ -244,20 +244,15 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.67",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "16ddbe776f10da6a95ebd25de7c1dbed397dc493"
-            },
+            "version": "2.1.39",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/16ddbe776f10da6a95ebd25de7c1dbed397dc493",
-                "reference": "16ddbe776f10da6a95ebd25de7c1dbed397dc493",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c6f73a2af4cbcd99c931d0fb8f08548cc0fa8224",
+                "reference": "c6f73a2af4cbcd99c931d0fb8f08548cc0fa8224",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0"
+                "php": "^7.4|^8.0"
             },
             "conflict": {
                 "phpstan/phpstan-shim": "*"
@@ -298,7 +293,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-16T07:22:02+00:00"
+            "time": "2026-02-11T14:48:56+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1865,18 +1860,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpalosse/yasmf.git",
-                "reference": "8e8a28de61b380edb820fd2e7333ab38cfa15594"
+                "reference": "9ce5e7250df00b409c9b58804a69c3a7587701cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpalosse/yasmf/zipball/8e8a28de61b380edb820fd2e7333ab38cfa15594",
-                "reference": "8e8a28de61b380edb820fd2e7333ab38cfa15594",
+                "url": "https://api.github.com/repos/mpalosse/yasmf/zipball/9ce5e7250df00b409c9b58804a69c3a7587701cc",
+                "reference": "9ce5e7250df00b409c9b58804a69c3a7587701cc",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo": "*",
                 "php": ">=8.4",
-                "phpstan/phpstan": "1.10.*",
+                "phpstan/phpstan": "2.1.*",
                 "phpunit/phpunit": "13.0.*"
             },
             "type": "library",
@@ -1889,7 +1884,7 @@
             "support": {
                 "source": "https://github.com/mpalosse/yasmf/tree/1.6.3"
             },
-            "time": "2026-02-12T09:10:59+00:00"
+            "time": "2026-02-12T09:58:03+00:00"
         }
     ],
     "packages-dev": [],
