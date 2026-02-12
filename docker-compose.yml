@@ -1,6 +1,6 @@
 services:
   hello_world:
-    image: webdevops/php-apache-dev:8.2-alpine
+    image: webdevops/php-apache-dev:8.4-alpine
     container_name: yasmf_hello_world_app
     working_dir: /app/
     ports:
